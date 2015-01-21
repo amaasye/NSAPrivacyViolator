@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rBv-Uc-Ugd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dear Citizen-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,104 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The NSA politely requests access to your location at all times." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Kb-Zu-N4b">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quS-le-hdI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Um...Ok">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startViolatingPrivacy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tFw-k8-2C1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucB-JW-s6e">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="What!? No">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startViolatingPrivacy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4qf-Zh-jQT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ucB-JW-s6e" secondAttribute="centerY" constant="-32" id="1bj-z9-Dr8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9Kb-Zu-N4b" secondAttribute="bottom" id="TJ4-5I-79Y"/>
+                            <constraint firstAttribute="centerX" secondItem="quS-le-hdI" secondAttribute="centerX" constant="84.5" id="ahE-1W-cOe"/>
+                            <constraint firstAttribute="centerX" secondItem="ucB-JW-s6e" secondAttribute="centerX" constant="-73.5" id="ats-pg-i4e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Kb-Zu-N4b" secondAttribute="trailing" constant="-16" id="icZ-NL-2Wb"/>
+                            <constraint firstItem="9Kb-Zu-N4b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="l8i-qe-2cx"/>
+                            <constraint firstAttribute="centerY" secondItem="quS-le-hdI" secondAttribute="centerY" constant="-32" id="sSD-NU-0s0"/>
+                            <constraint firstItem="9Kb-Zu-N4b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="zCY-na-YaC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9Kb-Zu-N4b"/>
+                                <exclude reference="quS-le-hdI"/>
+                                <exclude reference="ucB-JW-s6e"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="icZ-NL-2Wb"/>
+                                <exclude reference="l8i-qe-2cx"/>
+                                <exclude reference="zCY-na-YaC"/>
+                                <exclude reference="ahE-1W-cOe"/>
+                                <exclude reference="sSD-NU-0s0"/>
+                                <exclude reference="1bj-z9-Dr8"/>
+                                <exclude reference="ats-pg-i4e"/>
+                                <exclude reference="TJ4-5I-79Y"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9Kb-Zu-N4b"/>
+                                <include reference="quS-le-hdI"/>
+                                <include reference="ucB-JW-s6e"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="icZ-NL-2Wb"/>
+                                <include reference="l8i-qe-2cx"/>
+                                <include reference="zCY-na-YaC"/>
+                                <include reference="ahE-1W-cOe"/>
+                                <include reference="sSD-NU-0s0"/>
+                                <include reference="1bj-z9-Dr8"/>
+                                <include reference="ats-pg-i4e"/>
+                                <include reference="TJ4-5I-79Y"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Dear Citizen" id="0VE-hH-klg"/>
+                    <connections>
+                        <outlet property="textView" destination="9Kb-Zu-N4b" id="9oo-eM-kR2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1197" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pc7-y7-Bcl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rBv-Uc-Ugd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3IQ-ir-4c9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="9Cy-8p-sFi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YS8-pI-0yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187.5" y="998"/>
         </scene>
     </scenes>
 </document>

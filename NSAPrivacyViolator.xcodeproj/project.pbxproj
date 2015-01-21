@@ -14,6 +14,8 @@
 		B0787DEC1A701257009BA0E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0787DEB1A701257009BA0E3 /* Images.xcassets */; };
 		B0787DEF1A701257009BA0E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0787DED1A701257009BA0E3 /* LaunchScreen.xib */; };
 		B0787DFB1A701257009BA0E3 /* NSAPrivacyViolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0787DFA1A701257009BA0E3 /* NSAPrivacyViolatorTests.m */; };
+		B0787E051A7015D6009BA0E3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0787E041A7015D6009BA0E3 /* CoreLocation.framework */; };
+		B0787E071A7022DA009BA0E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0787E061A7022DA009BA0E3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		B0787DF41A701257009BA0E3 /* NSAPrivacyViolatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSAPrivacyViolatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0787DF91A701257009BA0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0787DFA1A701257009BA0E3 /* NSAPrivacyViolatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAPrivacyViolatorTests.m; sourceTree = "<group>"; };
+		B0787E041A7015D6009BA0E3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0787E061A7022DA009BA0E3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0787E071A7022DA009BA0E3 /* MapKit.framework in Frameworks */,
+				B0787E051A7015D6009BA0E3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		B0787DD21A701257009BA0E3 = {
 			isa = PBXGroup;
 			children = (
+				B0787E061A7022DA009BA0E3 /* MapKit.framework */,
+				B0787E041A7015D6009BA0E3 /* CoreLocation.framework */,
 				B0787DDD1A701257009BA0E3 /* NSAPrivacyViolator */,
 				B0787DF71A701257009BA0E3 /* NSAPrivacyViolatorTests */,
 				B0787DDC1A701257009BA0E3 /* Products */,
